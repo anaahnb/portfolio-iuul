@@ -22,3 +22,9 @@
 .about__section li {
   margin-bottom: 1rem;
 }
+
+.gallery-cell {
+  width: 300px;
+  height: 400px;
+  margin-right: 10px;
+}
