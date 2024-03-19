@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/formacao.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Portfolio </title>
+  </head>
+
+  <body>
+    <navbar-component></navbar-component>
+
+    <section class="work__section">
+      
+      <h1>Estudos e graduação</h1>
+
+      <span class="section__indicator">
+        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+        Formação acadêmica
+      </span>
+
+      <div class="formacao__container">
+        <formacao-item titulo="Graduação em Engenharia da Computação - Universidade Federal do Maranhão" periodo="(Mai, 2021 - Atual)"></formacao-item>
+        <formacao-item titulo="Capacitação em Inteligência Artificial - Instituto Federal do Maranhão" periodo="(Jul, 2023 - Nov, 2023)"></formacao-item>
+      </div>
+
+      <span class="section__indicator">
+        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+        Certificados
+      </span>
+
+      <div class="formacao__container">
+        <formacao-item titulo="Educação em Tech: Front-end - Nubank" periodo="(Ago, 2023)"></formacao-item>
+        <formacao-item titulo="Atlântico Academy Bootcamp - Atlântico" periodo="(Dez, 2022)"></formacao-item>
+        <formacao-item titulo="Programa Trilhas - Inova Maranhão" periodo="(Jan, 2022)"></formacao-item>
+      </div>
+
+    </section>
+
+    <footer-component></footer-component>
+
+    <script src="../components/Navbar.js"></script>
+    <script src="../components/Footer.js"></script>
+    <script src="../components/FormacaoItem.js"></script>
+
+
+  </body>
+</html>

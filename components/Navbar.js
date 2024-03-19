@@ -14,6 +14,7 @@ class Navbar extends HTMLElement {
     const links = [
       { text: 'AA', url: '../index.html' },
       { text: 'Experiência', url: '../pages/experiencia.html' },
+      { text: 'Formação', url: '../pages/formacao.html' },
       { text: 'Projeto', url: '../pages/projetos.html' },
       { text: 'Contato', url: '../pages/contato.html' }
     ];
