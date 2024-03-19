@@ -11,14 +11,22 @@ class Navbar extends HTMLElement {
     const wrapper = document.createElement('nav');
     wrapper.setAttribute('class', 'topnav');
 
-    const links = ['AA', 'Sobre', 'Projeto', 'Contato'];
+    const links = [
+      { text: 'AA', url: '../index.html' },
+      { text: 'Experiência', url: '../pages/experiencia.html' },
+      { text: 'Projeto', url: '../pages/projetos.html' },
+      { text: 'Contato', url: '../pages/contato.html' }
+    ];
 
-    links.forEach(text => {
+    const anchorElements = links.map(link => {
       const anchor = document.createElement('a');
-      anchor.textContent = text;
+      anchor.textContent = link.text;
       anchor.setAttribute('class', 'topnav-anchor');
-      wrapper.appendChild(anchor);
+      anchor.setAttribute('href', link.url);
+      return anchor;
     });
+
+    anchorElements.forEach(anchor => wrapper.appendChild(anchor));
 
     const iconAnchor = document.createElement('a');
     iconAnchor.setAttribute('class', 'icon');
@@ -34,7 +42,7 @@ class Navbar extends HTMLElement {
 
     const linkElement = document.createElement('link');
     linkElement.setAttribute('rel', 'stylesheet');
-    linkElement.setAttribute('href', '../css/navbar.css');
+    linkElement.setAttribute('href', '/css/navbar.css');
 
     this.shadowRoot.appendChild(linkElement);
     this.shadowRoot.appendChild(wrapper);

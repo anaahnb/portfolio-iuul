@@ -28,7 +28,7 @@ class Footer extends HTMLElement {
 
     const linkElement = document.createElement('link');
     linkElement.setAttribute('rel', 'stylesheet');
-    linkElement.setAttribute('href', './css/footer.css');
+    linkElement.setAttribute('href', '/css/footer.css');
 
     this.shadowRoot.appendChild(linkElement);
     this.shadowRoot.appendChild(wrapper);

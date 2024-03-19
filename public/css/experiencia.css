@@ -1,0 +1,27 @@
+.experiencia__texto, .experiencia__container {
+  margin: 2rem 0;
+}
+
+.experiencia__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.experiencia__item__cargo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;  
+  gap: .375rem;
+}
+
+.experiencia__content h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.experiencia__item__cargo span {
+  color: var(--gray);
+}

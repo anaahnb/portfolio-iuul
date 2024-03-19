@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/experiencia.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Portfolio </title>
+  </head>
+
+  <body>
+    <navbar-component></navbar-component>
+
+    <section class="work__section">
+      
+      <h1>
+        Carreira e trabalho
+      </h1>
+
+      <div class="experiencia__texto">
+        <p> 
+          Paralelamente aos estudos universitários, busquei oportunidades para aplicar na prática o que aprendia em sala de aula. Como aluno pesquisador, 
+          contribui com o desenvolvimento de aplicações web como parte de projetos de pesquisas de doutorados.
+        </p>
+        <p>
+          Apesar de atuar como Full Stack, minha verdadeira paixão sempre foi o Front-end. Essa afinidade natural me levou a assumir a responsabilidade 
+          pela criação e estilização dos componentes nessas experiências.
+        </p>
+      </div>
+
+      <span class="section__indicator">
+        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+        Experiências profissionais
+      </span>
+
+      <div class="experiencia__container">
+        <experiencia-item cargo="Desenvolvedor Full Stack" periodo="(Jan, 2023 - Atual)" empresa="Prefeitura de São Luís"></experiencia-item>
+        <experiencia-item cargo="Desenvolvedor Front-end" periodo="(Ago, 2023 - Fev, 2024)" empresa="Menina de UX"></experiencia-item>
+        <experiencia-item cargo="Desenvolvedor Full Stack" periodo="(Mai, 2022 - Jan, 2023)" empresa="Inforgeneses"></experiencia-item>
+      </div>
+
+    </section>
+
+    <footer-component></footer-component>
+
+    <script src="../components/Navbar.js"></script>
+    <script src="../components/Footer.js"></script>
+    <script src="../components/ExperienciaItem.js"></script>
+
+
+  </body>
+</html>
