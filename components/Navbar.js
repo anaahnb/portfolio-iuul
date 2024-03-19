@@ -5,7 +5,7 @@ class Navbar extends HTMLElement {
   }
 
   build() {
-    
+
     this.attachShadow({ mode: 'open' });
 
     const wrapper = document.createElement('nav');
@@ -27,7 +27,7 @@ class Navbar extends HTMLElement {
 
     const iconImage = document.createElement('img');
     iconImage.setAttribute('src', '../img/menu-icon.svg');
-    iconImage.setAttribute('alt', '');
+    iconImage.setAttribute('alt', 'Botão para abrir menu');
 
     iconAnchor.appendChild(iconImage);
     wrapper.appendChild(iconAnchor);

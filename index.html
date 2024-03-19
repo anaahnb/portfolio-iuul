@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
 
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Portfolio </title>
@@ -12,7 +17,37 @@
 
   <body>
     <navbar-component></navbar-component>
+    
+    <header class="header__section">
+      <div class="header__text">
+        <p>  Olá, mundo! Eu sou </b> </p>
+        <h1>Ana Alencar</h1>
+        <p> 
+          Sou uma <b> desenvolvedora front-end </b> que busca impactar positivamente as pessoas 
+          através de soluções tecnológicas atraentes. 
+        </p>
+      </div>
+      <img src="./img/shapes.svg" aria-hidden="true">
+    </header>
+    
+    <section class="about__section">
+      <span class="section__indicator">
+        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+        Processo
+      </span>
 
+      <div>
+        <h2>
+          Independentemente do projeto em que estou trabalhando, gosto de seguir a mesma abordagem...
+        </h2>
+        <ol>
+          <li>Priorizo a experiência do usuário, garantindo interfaces intuitivas e responsivas.</li>
+          <li>Adoto padrões de desenvolvimento limpos e modulares, facilitando a manutenção e promovendo consistência.</li>
+          <li>Implemento testes de acessibilidade para garantir que a aplicação seja utilizável por pessoas com diferentes necessidades, cumprindo padrões e diretrizes de acessibilidade.</li>
+        </ol>
+      </div>
+    </section>
+    
     <script src="./components/Navbar.js"></script>
   </body>
 </html>
