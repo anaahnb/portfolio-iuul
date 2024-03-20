@@ -1,0 +1,24 @@
+.projeto__section p {
+    max-width: 36rem;
+}
+
+.projeto__card {
+    display: flex;
+    margin: 3rem 0;
+    gap: 3rem;
+}
+
+.projeto__card img {
+    border-radius: .5rem;
+}
+
+.projeto__card__texto h3 {
+    font-size: 1.125rem;
+    margin-top: 0;
+}
+
+.projeto__card__texto a {
+    color: var(--black);
+    font-weight: 500;
+    text-decoration: underline;
+}

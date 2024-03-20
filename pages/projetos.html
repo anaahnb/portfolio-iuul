@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projetos.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Portfolio </title>
+  </head>
+
+  <body>
+    <navbar-component></navbar-component>
+
+    <section class="projeto__section">
+        <h1> Projetos </h1>
+        <p> 
+            Esses são os últimos projetos que trabalhei. 
+            <b>Vamos colaborar juntos e trazer a sua ideia para a realidade.</b>
+        </p>
+        <span>
+            <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+        </span>
+
+        <div>
+            <div class="projeto__card">   
+                <div class="projeto__card__texto">
+                    <div>
+                        <h3>Habits</h3>
+                        <p>Habits é uma aplicação web torna simples e visual o acompanhamento dos seus hábitos diários.</p>
+                        <span>Desenvolvida em Laravel, Tailwind CSS e SQL.</span>
+                    </div>
+                    <a href="https://github.com/anaahnb/habits">
+                        Ver repositório
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <img src="/img/projeto-image-1.png" alt="">
+            </div>
+
+            <div class="projeto__card">   
+                <div class="projeto__card__texto">
+                    <div>
+                        <h3>Por Elas</h3>
+                        <p>Landing page desenvolvida para promover o alcance do projeto social Por Elas durante o Programa Trilhas </p>
+                        <span>Desenvolvida em HTML, CSS e JavaScript.</span>
+                    </div>
+                    <a href="https://www.porelas.ong.br/">
+                        Visitar site
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <img src="/img/projeto-image-2.png" alt="">
+            </div>
+
+            <div class="projeto__card">   
+                <div class="projeto__card__texto">
+                    <div>
+                        <h3>Cooking up</h3>
+                        <p>Uma aplicação web que site sugere receitas com base nos ingredientes que o usuário seleciona.</p>
+                        <span>Desenvolvida em VueJS e CSS.</span>
+                    </div>
+                    <a href="https://cooking-up-mu.vercel.app/">
+                        Visitar site
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <img src="/img/projeto-image-3.png" alt="">
+            </div>
+
+            
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+
+    <script src="../components/Navbar.js"></script>
+    <script src="../components/Footer.js"></script>
+    <script src="../components/ExperienciaItem.js"></script>
+
+
+  </body>
+</html>
