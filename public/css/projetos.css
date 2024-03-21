@@ -1,7 +1,5 @@
 .projeto__section p {
     max-width: 35rem;
-    border: 2px red solid;
-
 }
 
 .projeto__card p {
@@ -11,7 +9,6 @@
 .projeto__card {
     display: flex;
     margin: 3rem 0;
-    border: 2px red solid;
     gap: 1rem;    
     justify-content: space-between;
     flex-wrap: wrap;     
@@ -20,7 +17,6 @@
 .image__container {
     max-width: 35rem;
     max-height: 18.75rem;
-    border: 5px blue solid;
 } 
 
 .image__container img {
