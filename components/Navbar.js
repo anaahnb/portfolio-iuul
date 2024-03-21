@@ -13,19 +13,29 @@ class Navbar extends HTMLElement {
 
     const links = [
       { text: 'AA', url: '../index.html' },
+      { text: 'Contato', url: '../pages/contato.html' },
       { text: 'Experiência', url: '../pages/experiencia.html' },
       { text: 'Formação', url: '../pages/formacao.html' },
-      { text: 'Projeto', url: '../pages/projetos.html' },
-      { text: 'Contato', url: '../pages/contato.html' }
+      { text: 'Projetos', url: '../pages/projetos.html' },
+      { text: 'Sobre', url: '/' },
+
     ];
 
+    const currentPath = window.location.pathname.split('/').pop();
+    
     const anchorElements = links.map(link => {
       const anchor = document.createElement('a');
+      
       anchor.textContent = link.text;
       anchor.setAttribute('class', 'topnav-anchor');
       anchor.setAttribute('href', link.url);
+      
+      if (currentPath === link.url.split('/').pop()) {
+        anchor.classList.add('active');
+      }
+
       return anchor;
-    });
+    }); 
 
     anchorElements.forEach(anchor => wrapper.appendChild(anchor));
 
