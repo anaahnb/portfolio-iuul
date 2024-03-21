@@ -11,12 +11,15 @@ class Footer extends HTMLElement {
 
     const contentDiv = document.createElement('div');
     const linkedinLink = document.createElement('a');
-    linkedinLink.setAttribute('href', 'https://www.linkedin.com/');
+    linkedinLink.setAttribute('href', 'https://www.linkedin.com/in/ana-j%C3%BAlia-alencar/');
+    linkedinLink.setAttribute('target', '_blank');
     linkedinLink.textContent = 'Linkedin';
     contentDiv.appendChild(linkedinLink);
 
     const githubLink = document.createElement('a');
-    githubLink.setAttribute('href', 'https://github.com/');
+    githubLink.setAttribute('href', 'https://github.com/anaahnb');
+    linkedinLink.setAttribute('target', '_blank');
+
     githubLink.textContent = 'Github';
     contentDiv.appendChild(githubLink);
 
