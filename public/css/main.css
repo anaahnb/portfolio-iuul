@@ -14,7 +14,7 @@
 .header__text p { max-width: 36rem; }
 .about__section h2 { font-weight: 500; }
 
-.header__section img {
+.header__section video {
   max-width: 25rem;
   width: auto;
 }
