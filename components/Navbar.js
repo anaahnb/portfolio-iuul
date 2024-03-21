@@ -12,16 +12,16 @@ class Navbar extends HTMLElement {
     wrapper.setAttribute('class', 'topnav');
 
     const links = [
-      { text: 'AA', url: '../index.html' },
-      { text: 'Contato', url: '../pages/contato.html' },
-      { text: 'Experiência', url: '../pages/experiencia.html' },
-      { text: 'Formação', url: '../pages/formacao.html' },
-      { text: 'Projetos', url: '../pages/projetos.html' },
+      { text: 'AA', url: '/index.html' },
+      { text: 'Contato', url: '/pages/contato.html' },
+      { text: 'Experiência', url: '/pages/experiencia.html' },
+      { text: 'Formação', url: '/pages/formacao.html' },
+      { text: 'Projetos', url: '/pages/projetos.html' },
       { text: 'Sobre', url: '/' },
 
     ];
 
-    const currentPath = window.location.pathname.split('/').pop();
+    const currentPath = window.location.pathname;
     
     const anchorElements = links.map(link => {
       const anchor = document.createElement('a');
@@ -30,7 +30,7 @@ class Navbar extends HTMLElement {
       anchor.setAttribute('class', 'topnav-anchor');
       anchor.setAttribute('href', link.url);
       
-      if (currentPath === link.url.split('/').pop()) {
+      if (currentPath === link.url) {
         anchor.classList.add('active');
       }
 
@@ -45,7 +45,7 @@ class Navbar extends HTMLElement {
     iconAnchor.addEventListener('click', () => this.toggleResponsive());
 
     const iconImage = document.createElement('img');
-    iconImage.setAttribute('src', '../img/menu-icon.svg');
+    iconImage.setAttribute('src', '/img/menu-icon.svg');
     iconImage.setAttribute('alt', 'Botão para abrir menu');
 
     iconAnchor.appendChild(iconImage);
