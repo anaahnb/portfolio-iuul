@@ -1,15 +1,37 @@
 .projeto__section p {
-    max-width: 36rem;
+    max-width: 35rem;
+    border: 2px red solid;
+
+}
+
+.projeto__card p {
+    max-width: 30rem;
 }
 
 .projeto__card {
     display: flex;
     margin: 3rem 0;
-    gap: 3rem;
+    border: 2px red solid;
+    gap: 1rem;    
+    justify-content: space-between;
+    flex-wrap: wrap;     
 }
 
-.projeto__card img {
+.image__container {
+    max-width: 35rem;
+    max-height: 18.75rem;
+    border: 5px blue solid;
+} 
+
+.image__container img {
     border-radius: .5rem;
+    object-fit: fill;
+}
+
+@media screen and (max-width: 622px) {
+    .image__container img {
+        max-width: 86vw;
+    }
 }
 
 .projeto__card__texto h3 {
